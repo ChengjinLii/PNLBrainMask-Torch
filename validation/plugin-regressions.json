@@ -1,0 +1,18 @@
+{
+  "patterns": [
+    "test_brain_mask*.py",
+    "test_managed_pnl.py",
+    "test_gpu_execution_policy.py",
+    "test_preprocessing_mask_integration.py",
+    "test_managed_runtimes.py",
+    "test_environment*.py",
+    "test_extension_distribution.py",
+    "test_optional_assets.py"
+  ],
+  "python": "3.11.15",
+  "tests_run": 201,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [],
+  "passed": true
+}

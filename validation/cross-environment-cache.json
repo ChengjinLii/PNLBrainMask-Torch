@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "fresh_model_directory": true,
+  "network_disabled": true,
+  "files": [
+    "IITmean_b0_256.nii.gz",
+    "axial.pt",
+    "coronal.pt",
+    "sagittal.pt",
+    "weights.json"
+  ],
+  "legacy_hdf5_files": [],
+  "compatible_torch_preserved": true,
+  "torch_version": "2.5.1+cpu",
+  "forward_checks": "three_views_three_heads"
+}

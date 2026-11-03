@@ -1,0 +1,25 @@
+{
+  "fresh_install": true,
+  "status": "completed",
+  "receipt_status": "ready",
+  "reuse_same_configuration": true,
+  "pnl_torch_commit": "8d201a50447ebea8b10a4f252bfd262931603970",
+  "wheel_url": "https://raw.githubusercontent.com/ChengjinLii/PNLBrainMask-Torch/8d201a50447ebea8b10a4f252bfd262931603970/artifacts/pnl_brain_mask-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "44f16ebe938db2ad4be0a5d4f1fe834b73ffdcdcdc1205c7ba965781a5916dac",
+  "functional_checks": [
+    "ants:synthetic_image_roundtrip"
+  ],
+  "forward_checks": "three_views_three_heads",
+  "runtime": {
+    "absent_offline_dependencies": {
+      "tensorflow": true,
+      "keras": true,
+      "h5py": true,
+      "conversion": true
+    },
+    "torch_version": "2.5.1+cpu",
+    "numpy_version": "2.4.6",
+    "package_version": "0.1.0"
+  },
+  "installation_seconds": 567.9621505904943
+}

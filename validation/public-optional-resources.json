@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "profile": "pnl-cnn",
+  "hash_verification": "passed",
+  "network_free_reuse": true,
+  "legacy_hdf5_selected": false,
+  "files": [
+    {
+      "path": "brain_mask/pnl_cnn_torch/axial.pt",
+      "sha256": "27bf8c38a38dfef44f1bb25ab2d180803d9a5794e5dcdb69c4ab0692f2744287",
+      "size_bytes": 74989746,
+      "urls": [
+        "https://raw.githubusercontent.com/ChengjinLii/PNLBrainMask-Torch/8d201a50447ebea8b10a4f252bfd262931603970/weights/axial.pt"
+      ]
+    },
+    {
+      "path": "brain_mask/pnl_cnn_torch/coronal.pt",
+      "sha256": "a11da30afb41d8db1afa7c447ff94260e7421b0e00c4dd1018825408059a2feb",
+      "size_bytes": 75012598,
+      "urls": [
+        "https://raw.githubusercontent.com/ChengjinLii/PNLBrainMask-Torch/8d201a50447ebea8b10a4f252bfd262931603970/weights/coronal.pt"
+      ]
+    },
+    {
+      "path": "brain_mask/pnl_cnn_torch/sagittal.pt",
+      "sha256": "7dd553b55a4d1d108ddd3e0bad99d6275a4c3a9c833dd469a0ad026d393afdcc",
+      "size_bytes": 75013528,
+      "urls": [
+        "https://raw.githubusercontent.com/ChengjinLii/PNLBrainMask-Torch/8d201a50447ebea8b10a4f252bfd262931603970/weights/sagittal.pt"
+      ]
+    },
+    {
+      "path": "brain_mask/pnl_cnn_torch/weights.json",
+      "sha256": "b1af9575253ec94aa5e52b22a14731745e07fac4fb9453c70074e9e2cae48baa",
+      "size_bytes": 1529,
+      "urls": [
+        "https://raw.githubusercontent.com/ChengjinLii/PNLBrainMask-Torch/8d201a50447ebea8b10a4f252bfd262931603970/weights/weights.json"
+      ]
+    },
+    {
+      "path": "brain_mask/pnl_cnn_torch/LICENSE.txt",
+      "sha256": "2586e5953fa5a9bd8d700c21db9503ed448a57209f6e4f24ec3f8d5381715902",
+      "size_bytes": 11374,
+      "urls": [
+        "https://raw.githubusercontent.com/ChengjinLii/PNLBrainMask-Torch/8d201a50447ebea8b10a4f252bfd262931603970/LICENSE"
+      ]
+    },
+    {
+      "path": "brain_mask/pnl_cnn_torch/IITmean_b0_256.nii.gz",
+      "sha256": "2bb1a7bbe448702033a515e76164df6472828422ecef5cb4f996d91ec126dead",
+      "size_bytes": 7830929,
+      "urls": [
+        "https://www.nitrc.org/frs/download.php/11290/IITmean_b0_256.nii.gz"
+      ]
+    }
+  ]
+}

@@ -151,6 +151,44 @@ mask artifacts needed for the native check. Repeated serialization can produce
 different `.pt` bytes with different PyTorch versions; the source tensor audit
 is separate from the byte-level download checks.
 
+## Installation and Integration Acceptance
+
+The published v0.1.0 implementation is commit
+`8d201a50447ebea8b10a4f252bfd262931603970`. The managed installer pins the
+33,462-byte wheel with SHA256
+`44f16ebe938db2ad4be0a5d4f1fe834b73ffdcdcdc1205c7ba965781a5916dac`.
+The environment was created from scratch using the actual installer, not a mock:
+Python 3.11.18, ANTs 2.3.0, PyTorch 2.5.1+cpu and NumPy 2.4.6.
+ANTs image roundtrip, all three views/all three heads, installation receipt,
+and a second verified reuse passed. TensorFlow, Keras, h5py and conversion are
+absent. See [managed installation](validation/managed-installation.json).
+
+The current optional `pnl-cnn` profile was also downloaded publicly and verified:
+three `.pt` files, weight manifest, full license and the original NITRC IIT
+template. No legacy HDF5 was selected or downloaded. Historical HDF5 records
+remain only in the explicit `pnl-cnn-legacy` profile. Reuse with the downloader
+disabled passed. See [public resources](validation/public-optional-resources.json).
+
+Cross-environment reuse was tested with network access disabled: a compatible
+existing Torch environment retained its framework and copied the checked shared
+Torch assets, then passed model loading and three-head forward checks. The
+managed route does not require running the optional resource installer first;
+it fetches missing Torch assets directly, or reuses checked optional assets.
+See [cache reuse](validation/cross-environment-cache.json).
+
+Final local regressions: **20 standalone tests passed** and **201 PNL-facing
+plugin/resource/environment/distribution tests passed**, with no errors, failures
+or skips in the final run (CMake 3.31.6 supplied on PATH). The plugin test set is
+not a claim of full Slicer SDK/GUI qualification. Original strict FP32 failures
+remain unchanged and separate from these regression results.
+See [regression record](validation/plugin-regressions.json).
+
+The real 4D HCP DWI was run again through the plugin using that freshly installed
+managed Python, model directory and ANTs binaries. Native-grid, binary, finite,
+nonempty output and verified cache reuse passed. This remains a separate
+registration/integration run, not a probability-pairing result.
+See [managed plugin smoke](validation/managed-plugin-smoke.json).
+
 ## Scope
 
 The mask agreement above is for one real subject with a common registration.

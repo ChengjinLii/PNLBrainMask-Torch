@@ -14,12 +14,14 @@ def main():
     parser.add_argument("--bvecs", type=Path, required=True)
     parser.add_argument("--models", type=Path, required=True)
     parser.add_argument("--ants-bin", type=Path, required=True)
+    parser.add_argument("--runtime-python", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     sys.path.insert(0, str(args.plugin_root))
     from shared.brain_mask import BrainMaskConfig, generate_brain_mask
+    python = args.runtime_python or Path(sys.executable)
     config = BrainMaskConfig(backend="pnl_cnn", brain_mask_device="cpu", threads=2,
-        pnl_mask_python=Path(sys.executable), pnl_mask_script=Path(sys.executable).parent / "pnl-brain-mask",
+        pnl_mask_python=python, pnl_mask_script=python.parent / "pnl-brain-mask",
         pnl_mask_model_dir=args.models, pnl_mask_ants_bin_dir=args.ants_bin)
     result = generate_brain_mask(args.dwi, args.bvals, args.bvecs, args.output,
                                  config=config, force=True, log=print)
