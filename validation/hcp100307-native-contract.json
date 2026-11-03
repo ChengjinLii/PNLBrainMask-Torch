@@ -1,0 +1,13 @@
+{
+  "upstream_script_sha256": "de1180437804dcfdc6c4cdf697bed70c59ab8f5c196cc104be05519a1cb7d961",
+  "normalization_bitwise_equal": true,
+  "view_orientation_bitwise_equal": true,
+  "fusion_mask_bitwise_equal": true,
+  "upstream_native_cleanup_bitwise_equal": true,
+  "native_tf_torch_different_voxels": 0,
+  "native_tf_torch_dice": 1.0,
+  "native_voxels": 3658350,
+  "geometry_equal": true,
+  "tf_brain_voxels": 697887,
+  "torch_brain_voxels": 697887
+}

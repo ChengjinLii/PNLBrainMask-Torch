@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pnl-brain-mask"
+version = "0.1.0"
+description = "PNL diffusion MRI CompNet brain masking with converted PyTorch weights"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "LicenseRef-PNL-Brigham"
+license-files = ["LICENSE", "src/pnl_brain_mask/data/PNL-LICENSE.txt"]
+authors = [{name = "Chengjin Li"}]
+dependencies = ["torch>=2.4,<3", "numpy>=1.24,<3", "nibabel>=5.2,<6"]
+
+[project.optional-dependencies]
+conversion = ["h5py>=3.8,<4"]
+validation = ["tensorflow-cpu==2.15.1", "numpy<2", "h5py>=3.8,<4"]
+test = ["pytest>=8", "h5py>=3.8,<4"]
+
+[project.scripts]
+pnl-brain-mask = "pnl_brain_mask.cli:main"
+
+[project.urls]
+Repository = "https://github.com/ChengjinLii/PNLBrainMask-Torch"
+Original = "https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pnl_brain_mask = ["data/*.json", "data/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

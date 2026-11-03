@@ -1,0 +1,35 @@
+{
+  "format": 1,
+  "source_commit": "d7fe0fd4976c2d5a3489526f75d2a00dae3e1fe1",
+  "source_url": "https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation/releases/download/v0.3/model_folder.tar.gz",
+  "archive_sha256": "c67210fd59e5bcaf8e0e730bdde9d8f28b817148a74d9586a39c9b6e86df5191",
+  "architecture_sha256": "989fd5a64d9307268441c3525d59b31d59c20db864f0262ef53ad53ec495bdae",
+  "conversion": "HWIO/HWOI -> OIHW/IOHW; BN gamma/beta/mean/variance unchanged",
+  "retrained": false,
+  "views": {
+    "axial": {
+      "file": "axial.pt",
+      "sha256": "27bf8c38a38dfef44f1bb25ab2d180803d9a5794e5dcdb69c4ab0692f2744287",
+      "source_file": "weights-axial-improvement-08.h5",
+      "source_sha256": "e11d3c410769c68844109a86eed40ebedc655ea03c14f6f54f4f13749c5ead18",
+      "state_tensors": 414,
+      "parameters": 18705959
+    },
+    "coronal": {
+      "file": "coronal.pt",
+      "sha256": "a11da30afb41d8db1afa7c447ff94260e7421b0e00c4dd1018825408059a2feb",
+      "source_file": "weights-coronal-improvement-08.h5",
+      "source_sha256": "248dcf90752d4e0a2e22a136c5f0ca6d3c9cb9b628d131ce869d9ef6cbea702c",
+      "state_tensors": 414,
+      "parameters": 18705959
+    },
+    "sagittal": {
+      "file": "sagittal.pt",
+      "sha256": "7dd553b55a4d1d108ddd3e0bad99d6275a4c3a9c833dd469a0ad026d393afdcc",
+      "source_file": "weights-sagittal-improvement-09.h5",
+      "source_sha256": "27aaafddac65617e0653c4da4fd0c650529fcc8150b4efd6b66135070ebc01bc",
+      "state_tensors": 414,
+      "parameters": 18705959
+    }
+  }
+}

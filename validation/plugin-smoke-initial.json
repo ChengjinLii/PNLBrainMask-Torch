@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "framework": "pytorch",
+  "package_version": "0.1.0",
+  "qc": {
+    "geometry_pass": true,
+    "binary": true,
+    "finite": true,
+    "brain_voxels": 698176,
+    "mask_fov_fraction": 0.1908445064031599,
+    "human_review": "pending",
+    "warnings": [
+      "Inspect brain boundaries, cerebellum and brainstem before quantitative use"
+    ]
+  },
+  "b0_volumes": 18,
+  "cache_reuse": "reused",
+  "output_sha256": "db5bf5249b817794dfeec5d574e9329e73a06e15c46327bfa1712ca3ede8ea14",
+  "runtime_seconds": 134.9428105186671
+}

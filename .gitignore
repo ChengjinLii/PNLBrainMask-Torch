@@ -1,0 +1,15 @@
+.venv*/
+.audit-upstream/
+.work/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+*.pt
+!weights/*.pt
+*.h5
+*.nii*
+*.npz
+*.npy
+models/

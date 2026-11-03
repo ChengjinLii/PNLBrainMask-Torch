@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Cite the original PNL software and CompNet method as well as this modified implementation; see README."
+title: "PNLBrainMask-Torch: converted PNL CompNet inference in PyTorch"
+version: 0.1.0
+type: software
+authors:
+  - family-names: Li
+    given-names: Chengjin
+repository-code: "https://github.com/ChengjinLii/PNLBrainMask-Torch"
+url: "https://github.com/ChengjinLii/PNLBrainMask-Torch"
+references:
+  - type: software
+    title: "CNN based diffusion MRI brain segmentation tool"
+    authors:
+      - family-names: Palanivelu
+        given-names: Senthil
+      - family-names: Cetin Karayumak
+        given-names: Suheyla
+      - family-names: Billah
+        given-names: Tashrif
+      - family-names: Zurrin
+        given-names: Ryan
+      - family-names: Bouix
+        given-names: Sylvain
+      - family-names: Rathi
+        given-names: Yogesh
+    year: 2020
+    doi: 10.5281/zenodo.3665739
+    repository-code: "https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation"
